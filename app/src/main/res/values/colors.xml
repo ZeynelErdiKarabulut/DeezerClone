@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="backgroundColor">#BB000000</color>
+
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#1E1E1E</color>
+    <color name="colorAccent">#c2ff00</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteCard">@color/cardview_light_background</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorYellow">#ffed00</color>
+
+    <color name="colorFavoriteDisabled">#6D6D6D</color>
+    <color name="colorFavoriteEnabled">@color/colorRed</color>
+
+    <color name="colorTabLayout">#242424</color>
+
+    <color name="colorBottomPlayer">#242424</color>
+
+</resources>

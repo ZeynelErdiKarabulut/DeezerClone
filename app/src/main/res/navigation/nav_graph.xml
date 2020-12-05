@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/genre">
+
+    <!-- Global Actions  -->
+    <action
+        android:id="@+id/action_genre"
+        app:destination="@+id/genre"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_search"
+        app:destination="@+id/search"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_favorites"
+        app:destination="@+id/favorites"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/genre"
+        android:name="com.zeynelerdi.deezer.ui.genre.GenreFragment"
+        tools:layout="@layout/fragment_genre">
+
+        <action
+            android:id="@+id/action_genre_list"
+            app:destination="@+id/genre_list"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/genre_list"
+        android:name="com.zeynelerdi.deezer.ui.artist.ArtistsFragment"
+        tools:layout="@layout/fragment_artists">
+
+        <action
+            android:id="@+id/action_artist_details"
+            app:destination="@+id/artist_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.zeynelerdi.deezer.ui.search.SearchFragment"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_artist_details"
+            app:destination="@+id/artist_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+        <action
+            android:id="@+id/action_album_details"
+            app:destination="@+id/album_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/artist_details"
+        android:name="com.zeynelerdi.deezer.ui.artistdetails.detail.ArtistDetailsFragment"
+        tools:layout="@layout/fragment_artist_details">
+
+        <action
+            android:id="@+id/action_album_details"
+            app:destination="@+id/album_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_artist_details"
+            app:destination="@+id/artist_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+             />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.zeynelerdi.deezer.ui.favorites.FavoritesFragment"
+        tools:layout="@layout/fragment_favorites">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/album_details"
+        android:name="com.zeynelerdi.deezer.ui.album.AlbumDetailsFragment"
+        tools:layout="@layout/fragment_album_details">
+
+    </fragment>
+
+
+</navigation>
